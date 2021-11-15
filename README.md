@@ -35,8 +35,8 @@ python manage.py runserver
 ```
 
 ### Open REST API endpoints in browser
-1. [Notes](http://localhost:8000/api/notes/)
-2. [Bibliographies](http://localhost:8000/api/bibliographies/)
+1. [http://localhost:8000/api/notes/](http://localhost:8000/api/notes/)
+2. [http://localhost:8000/api/bibliographies/](http://localhost:8000/api/bibliographies/)
 
 ## License
 GNU GPL3 License.
