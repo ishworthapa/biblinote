@@ -28,6 +28,7 @@ git clone https://github.com/ishworthapa/biblinote.git
 
 ```
 
+## Getting Started
 ### Running the server
 ```{bash}
 cd biblinote/biblinote
