@@ -27,3 +27,18 @@ Following are the user stories followed by *acceptance criteria* (in *italics*) 
     + Given a user is logged in, when user clicks on "share" in "bibliography" page, the interface allows user to add an email address to share the bibliography (and associated notes).
 10. As a **user**, I want to **search my notes/bibliography** so I can find relevant references.
     + Given a user is logged in, when user clicks on "search" button with a term, the interface shows results of all the results from text search.
+
+
+# Mis-User Stories
+Following are the mis-user stories along with *mitigation criteria* for ***biblinote*** app:
+
+1. As a **fake registered user**, one wants to **edit other user's information** so that email information and names can be stolen.
+    + *The mitigation criteria includes having distinct role for users and limiting regular users to have access to one's own information only.*
+2. As a **fake registered user**, one wants to **flood the database** with humongous data so that it will lead to overloading of resources and disruptions of the service.
+    + *The mitigation criteria includes having fixed size for all the input data*
+3. As a **fake registered user**, one wants to **share fake bibliography and notes** in order to lure people into clicking malicious links.
+    + *The mitigation criteria includes blocking visibility of other users from fake registered user*
+    + *The invitation to sharing of bibliography is allowed only if the recipient email address matches with a registered user*
+
+
+
