@@ -41,4 +41,42 @@ Following are the mis-user stories along with *mitigation criteria* for ***bibli
     + *The invitation to sharing of bibliography is allowed only if the recipient email address matches with a registered user*
 
 
+# Diagrams
 
+## Mockup diagrams
+### Home Page
+![](mockups/HomePage.png)
+
+### Register Page
+![](mockups/Register.png)
+
+### Landing Page after successful login
+![](mockups/LandingPage.png)
+
+### Bibliography Page
+![](mockups/BibliographyPage.png)
+
+### Notes Page
+![](mockups/NotesPage.png)
+
+### Add/Edit Bibliography Page
+![](mockups/AddEditBibliography.png)
+
+### Add/Edit Note Page
+![](mockups/AddEditNote.png)
+
+### Manage Users Page
+![](mockups/AdminUsers.png)
+
+
+
+## Architecture diagrams
+
+### System Context Diagram
+![](ArchitectureDiagrams/SystemContext.png)
+
+### Container Diagram
+![](ArchitectureDiagrams/ContainerDiagram.png)
+
+### Components Diagram
+![](ArchitectureDiagrams/ComponentsDiagram.png)
