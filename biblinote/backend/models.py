@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 import datetime
 from django.utils import timezone
-
+from django.contrib.auth.models import User
 # Create your models here.
 
 class Bibliography(models.Model):
@@ -13,18 +13,18 @@ class Bibliography(models.Model):
         ('AV','Audio Video'),
     ]
     # created date should be now
+    author = models.ForeignKey(User, on_delete=models.CASCADE)
     creation_date = models.DateTimeField(auto_now_add=True)
     bibliography_source = models.TextField(max_length=5000)
     bibliography_title = models.CharField(max_length=500)
     bibliography_type = models.CharField(choices=BIBTYPES,max_length=2)
-
     def __str__(self):
         return self.bibliography_title
 
 
 class Note(models.Model):
 
-    bibliography = models.ForeignKey(Bibliography, on_delete=models.CASCADE)
+    bibliography = models.ForeignKey(Bibliography, related_name='notes',on_delete=models.CASCADE)
     note_text = models.TextField(blank=True)
     creation_date = models.DateTimeField(auto_now_add=True)
 
