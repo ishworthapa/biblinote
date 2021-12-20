@@ -17,7 +17,8 @@ The ***BibliNote*** is an app to create notes about a scholarly article, a resea
 ### Software requirements
 
 1. python3
-2. Django and Django Rest Framework
+2. Node.js (Install from package managers or in the download page: https://nodejs.org/en/download/.) 
+4. Django, Django Rest Framework and other python packages required for this project are listed in biblinote/requirements.txt. Install those using pip as shown below.
 ```{bash}
 pip install -r biblinote/requirements.txt
 ```
