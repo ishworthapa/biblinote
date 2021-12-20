@@ -19,8 +19,7 @@ The ***BibliNote*** is an app to create notes about a scholarly article, a resea
 1. python3
 2. Django and Django Rest Framework
 ```{bash}
-pip install Django
-pip install djangorestframework
+pip install -r biblinote/requirements.txt
 ```
 ### Cloning the app from GitHub
 ```{bash}
