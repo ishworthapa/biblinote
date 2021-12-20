@@ -80,3 +80,5 @@ Following are the mis-user stories along with *mitigation criteria* for ***bibli
 
 ### Components Diagram
 ![](ArchitectureDiagrams/ComponentsDiagram.png)
+![](ArchitectureDiagrams/updatedC4.png)
+
