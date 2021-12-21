@@ -48,6 +48,13 @@ INSTALLED_APPS = [
     'rest_auth',
 ]
 SITE_ID = 1
+# CorsMiddleware is for cross-origin resource sharing and  
+# CORS headers allows your resources to be accessed by other domains.
+# Should be high as it can be.
+# Security Middleware provides several security enhancements such as 
+# enabling and disabling of SECURE_CROSS_ORIGIN_OPENER_POLICY and 
+# SECURE_CONTENT_TYPE_NOSNIFF
+# CsrfViewMiddleware provides protection against Cross Site Request Forgeries
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
@@ -139,6 +146,7 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# IP address and ports of the allowed cross site origins
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
@@ -149,6 +157,7 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
     "allauth.account.auth_backends.AuthenticationBackend",
 ]
+# For django-rest-auth and all auth package settings
 ACCOUNT_AUTHENTICATION_METHOD = 'email'
 ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_EMAIL_REQUIRED = True
@@ -164,6 +173,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ]
 }
+# Token and session authentication
 JWT_AUTH = {
     # Authorization:Token xxx
     'JWT_AUTH_HEADER_PREFIX': 'Token',
