@@ -42,11 +42,12 @@ python manage.py runserver
 1. [http://localhost:8000/api/notes/](http://localhost:8000/api/notes/)
 2. [http://localhost:8000/api/bibliographies/](http://localhost:8000/api/bibliographies/)
 
-### Running the frontend server
+### Running the frontend server (http://localhost:3000)
 ```{bash}
 cd biblinote/frontend
 npm start
 ```
+
 ## License
 GNU GPL3 License.
 Copyright (c) Ishwor Thapa 2021
