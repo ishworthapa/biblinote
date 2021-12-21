@@ -34,7 +34,7 @@ const Login = () => {
         'Content-Type': 'application/json',
         'X-CSRFToken': cookies.get('csrftoken'),
       },
-      body: JSON.stringify(user),
+      body: JSON.stringify(user).replace(/</g, '\\u003c'),
       credentials: 'include',
     })
       .then(res => res.json())

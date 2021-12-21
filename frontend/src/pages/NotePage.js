@@ -26,7 +26,7 @@ const NotePage = ({ match, history }) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(note)
+            body: JSON.stringify(note).replace(/</g, '\\u003c')
         })
     }
 
@@ -37,7 +37,7 @@ const NotePage = ({ match, history }) => {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(note)
+            body: JSON.stringify(note).replace(/</g, '\\u003c')
         })
     }
 

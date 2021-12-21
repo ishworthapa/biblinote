@@ -33,7 +33,7 @@ const BibliographyPage = ({ match, history }) => {
                 'Content-Type': 'application/json',
                 'Authorization': 'Token ' + localStorage.getItem('token')
             },
-            body: JSON.stringify(bibliography)
+            body: JSON.stringify(bibliography).replace(/</g, '\\u003c')
         })
     }
 
@@ -45,7 +45,7 @@ const BibliographyPage = ({ match, history }) => {
                 'Content-Type': 'application/json',
                 'Authorization': 'Token ' + localStorage.getItem('token')
             },
-            body: JSON.stringify(bibliography)
+            body: JSON.stringify(bibliography).replace(/</g, '\\u003c')
         })
     }
 
