@@ -21,6 +21,9 @@ The ***BibliNote*** is an app to create notes about a scholarly article, a resea
 4. Django, Django Rest Framework and other python packages required for this project are listed in biblinote/requirements.txt. Install those using pip as shown below.
 ```{bash}
 pip install -r biblinote/requirements.txt
+
+cd frontend
+npm install
 ```
 ### Cloning the app from GitHub
 ```{bash}
@@ -29,7 +32,7 @@ git clone https://github.com/ishworthapa/biblinote.git
 ```
 
 ## Getting Started
-### Running the server
+### Running the django server
 ```{bash}
 cd biblinote/biblinote
 python manage.py runserver
@@ -39,6 +42,11 @@ python manage.py runserver
 1. [http://localhost:8000/api/notes/](http://localhost:8000/api/notes/)
 2. [http://localhost:8000/api/bibliographies/](http://localhost:8000/api/bibliographies/)
 
+### Running the frontend server
+```{bash}
+cd biblinote/frontend
+npm start
+```
 ## License
 GNU GPL3 License.
 Copyright (c) Ishwor Thapa 2021
