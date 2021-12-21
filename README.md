@@ -43,3 +43,12 @@ python manage.py runserver
 GNU GPL3 License.
 Copyright (c) Ishwor Thapa 2021
 See [LICENSE file](https://raw.githubusercontent.com/ishworthapa/biblinote/main/LICENSE).
+
+# References:
+1. https://www.django-rest-framework.org/
+2. https://github.com/adamchainz/django-cors-headers
+3. https://django-rest-auth.readthedocs.io/en/latest/index.html
+4. https://reactjs.org/tutorial/tutorial.html
+5. https://github.com/divanov11/Django-React-NotesApp
+6. https://react-pdf.org/node
+7. https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks
